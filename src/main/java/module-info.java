@@ -17,8 +17,10 @@ module com.example.laboratoryworks {
     exports com.example.laboratoryworks.SalaryPayments;
     exports com.example.laboratoryworks.Ciphers;
     exports com.example.laboratoryworks.QrCode;
+    exports com.example.laboratoryworks.AtmBank;
     opens com.example.laboratoryworks to javafx.fxml;
     opens com.example.laboratoryworks.SalaryPayments to javafx.fxml;
     opens com.example.laboratoryworks.Ciphers to javafx.fxml;
     opens com.example.laboratoryworks.QrCode to javafx.fxml;
+    opens com.example.laboratoryworks.AtmBank to javafx.fxml;
 }

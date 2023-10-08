@@ -25,7 +25,7 @@ public class MainController {
 
             // Create a new stage and set the scene to "salaries.fxml"
             Stage stage = new Stage();
-            stage.setTitle("Salary payments!");
+            stage.setTitle("Выдача зарплаты!");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
@@ -40,7 +40,7 @@ public class MainController {
             Parent root = loader.load();
 
             Stage stage = new Stage();
-            stage.setTitle("Ciphers!");
+            stage.setTitle("Шифр Цезаря!");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
@@ -54,7 +54,21 @@ public class MainController {
             Parent root = loader.load();
 
             Stage stage = new Stage();
-            stage.setTitle("Ciphers!");
+            stage.setTitle("QR код!");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void onAtmBankClickButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("atm-bank.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = new Stage();
+            stage.setTitle("АТМ банк!");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
