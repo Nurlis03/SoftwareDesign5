@@ -1,5 +1,6 @@
 package com.example.laboratoryworks;
 
+import com.example.laboratoryworks.birds.BirdsController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -71,6 +72,32 @@ public class MainController {
             stage.setTitle("АТМ банк!");
             stage.setScene(new Scene(root));
             stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private BirdsController birdsController; // Reference to BirdsController
+
+    @FXML
+    void onPenguinsBirdsClickButton(ActionEvent actionEvent) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("birds.fxml"));
+            Parent root = loader.load();
+
+            birdsController = loader.getController(); // Get the reference to BirdsController
+
+            Stage stage = new Stage();
+            stage.setTitle("Птицы!");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // Set the close request handler for the child window
+            stage.setOnCloseRequest(event -> {
+                if (birdsController != null) {
+                    birdsController.stopMediaPlayer(); // Call the stop method in BirdsController
+                }
+            });
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -25,7 +25,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="penguinsBirdsButton" layoutX="30.0" layoutY="190.0" mnemonicParsing="false" onAction="#onPenguinsBirdsButtonClickButton" prefHeight="30.0" prefWidth="265.0" text="Пингвины и птицы">
+      <Button fx:id="penguinsBirdsButton" layoutX="30.0" layoutY="190.0" mnemonicParsing="false" onAction="#onPenguinsBirdsClickButton" prefHeight="30.0" prefWidth="265.0" text="Пингвины и птицы">
          <font>
             <Font size="14.0" />
          </font>
