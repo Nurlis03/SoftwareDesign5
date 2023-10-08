@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laboratoryworks.SalaryPayments.SalaryController">
+   <children>
+      <Label layoutX="164.0" layoutY="14.0" text="Система начисления заработной платы">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="benefitMoneyField" layoutX="31.0" layoutY="34.0" prefHeight="25.0" prefWidth="100.0" promptText="Премия" />
+      <TextField fx:id="profitTaxField" layoutX="147.0" layoutY="34.0" prefHeight="25.0" prefWidth="100.0" promptText="Под. налог %" />
+      <TextField fx:id="profTaxField" layoutX="258.0" layoutY="34.0" prefHeight="25.0" prefWidth="100.0" promptText="Проф. взнос %" />
+      <TextField fx:id="retirementTaxField" layoutX="369.0" layoutY="34.0" prefHeight="25.0" prefWidth="100.0" promptText="Соц. фонд %" />
+      <TextField fx:id="calendarDaysField" layoutX="479.0" layoutY="34.0" prefHeight="25.0" prefWidth="100.0" promptText="Календ. дней" />
+      <TextField fx:id="workDaysField" layoutX="591.0" layoutY="34.0" prefHeight="25.0" prefWidth="100.0" promptText="Рабочих дней" />
+      <DatePicker fx:id="dateField" layoutX="703.0" layoutY="34.0" prefHeight="25.0" prefWidth="126.0" />
+      <Button fx:id="countButton" layoutX="847.0" layoutY="34.0" mnemonicParsing="false" onAction="#countSalaries" text="Рассчитать" />
+      <TextField fx:id="totalPaiedField" layoutX="937.0" layoutY="34.0" prefHeight="25.0" prefWidth="116.0" promptText="Всего выплачено" />
+      <TableView fx:id="paymentsTable" layoutX="31.0" layoutY="84.0" prefHeight="400.0" prefWidth="1027.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="№" />
+          <TableColumn fx:id="name" prefWidth="166.0" text="ФИО сотрудника" />
+            <TableColumn fx:id="address" prefWidth="85.0" text="Город" />
+            <TableColumn fx:id="phone" prefWidth="89.0" text="Телефон" />
+            <TableColumn fx:id="positionName" prefWidth="99.0" text="Должность" />
+            <TableColumn fx:id="profit_tax" prefWidth="95.0" text="Под. налог %" />
+            <TableColumn fx:id="prof_tax" prefWidth="112.0" text="Проф. взнос %" />
+            <TableColumn fx:id="retirement_tax" prefWidth="107.0" text="Соц. фонд %" />
+            <TableColumn fx:id="date" prefWidth="96.0" text="Дата" />
+            <TableColumn fx:id="total" prefWidth="102.0" text="Начислено" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
