@@ -12,4 +12,4 @@
 ![image](https://github.com/Nurlis03/SoftwareDesign5/assets/99631295/144de170-7770-4d17-8feb-2f644e1ddf08)
 
 # ATM bank
-![image](https://github.com/Nurlis03/SoftwareDesign5/assets/99631295/28a1c6ff-1a64-4c6d-a041-68fba2d87f7a)
+![image](https://github.com/Nurlis03/SoftwareDesign5/assets/99631295/23332f0e-4646-4d76-824a-0bfb4699f277)
